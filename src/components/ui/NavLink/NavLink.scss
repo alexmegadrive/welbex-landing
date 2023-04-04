@@ -1,0 +1,22 @@
+.nav__link {
+  color: #e4e5ea;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  &:hover {
+    fill: orange;
+    color: orange;
+    transition: color 0.2s ease-in;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  .nav__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

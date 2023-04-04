@@ -1,0 +1,48 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  &--header {
+    gap: 32px;
+  }
+}
+
+.socials__item {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  & svg:hover path,
+  polygon,
+  circle {
+    fill: rgb(249, 137, 0);
+
+    transition: all 0.2s ease-in;
+  }
+}
+// svg:hover path,
+// polygon,
+// circle {
+//   fill: orange;
+//   // -webkit-filter: hue-rotate(150deg) saturate(50);
+//   // filter: hue-rotate(150deg) saturate(50);
+//   transition: all 0.2s ease-in;
+// }
+
+.socials__item:hover + svg {
+  fill: orange;
+}
+
+.socials__item--telegram {
+  // -webkit-filter: hue-rotate(250deg) saturate(10);
+  // filter: hue-rotate(250deg) saturate(10);
+  background-image: url("/telegram.svg");
+  // background-color: orange;
+  // -webkit-mask-image: url("/telegram.svg") no-repeat 50% 50%;
+  // mask-image: url("/telegram.svg") no-repeat 50% 50%;
+}
+.socials__item--viber {
+  background-image: url("/viber.svg");
+}
+.socials__item--whatsapp {
+  background-image: url("/whatsapp.svg");
+}
