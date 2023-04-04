@@ -1,7 +1,7 @@
 import React from "react";
-import "./earnMore.scss";
+import "./titleOffer.scss";
 
-const EarnMore = () => {
+const TitleOffer = () => {
   return (
     <section className="feature">
       <h1 className="feature__header">
@@ -14,4 +14,4 @@ const EarnMore = () => {
   );
 };
 
-export default EarnMore;
+export default TitleOffer;

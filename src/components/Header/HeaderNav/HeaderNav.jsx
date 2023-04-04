@@ -1,6 +1,5 @@
 import React from "react";
 import NavLink from "../../ui/NavLink/NavLink";
-// import styles from "../header.module.scss";
 
 const HeaderNav = () => {
   return (

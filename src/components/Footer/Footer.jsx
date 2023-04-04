@@ -6,7 +6,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer container">
-      <div className="footer__container">
+      <div className="footer__main">
         <div className="footer__section">
           <div className="footer-item">
             <div className="footer-item__title">О компании</div>
@@ -85,7 +85,6 @@ const Footer = () => {
           text="Политика конфиденциальности"
           classes="footer__copyright-link"
         />
-        {/* // <div className="footer__copyright-link"></div> */}
       </div>
     </footer>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import NavLink from "../../ui/NavLink/NavLink";
 import Socials from "../../ui/Socials/Socials";
-// import styles from "../header.module.scss";
 
 const HeaderContacts = () => {
   return (

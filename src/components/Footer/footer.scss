@@ -3,8 +3,7 @@
   display: flex;
   flex-direction: column;
 }
-.footer__container {
-  // margin: auto auto 0 auto;
+.footer__main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -84,7 +83,6 @@
   }
   .footer__copyright {
     margin-top: 45px;
-    // margin-bottom: 60px;
   }
   .footer-item + .footer-item,
   .footer__section + .footer-item {

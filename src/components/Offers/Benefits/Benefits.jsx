@@ -27,7 +27,7 @@ const Benefits = () => {
           header="Skype Аудит"
           description="отдела продаж и CRM системы"
         />
-        <BenefitItem header="35 дней" description="использования CRM" />
+        <BenefitItem header="35 дней" description="использования CRM" />
       </div>
 
       <OfferBtn text="Получить консультацию" />
