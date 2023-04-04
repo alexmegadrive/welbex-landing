@@ -6,10 +6,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  transition: all 0.2s ease-in-out;
   &:hover {
     fill: orange;
     color: orange;
-    transition: color 0.2s ease-in;
   }
 }
 

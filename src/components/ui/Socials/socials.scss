@@ -11,12 +11,13 @@
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
+  transition: all 0.2s ease-in;
+  transition-property: all;
+
   & svg:hover path,
   polygon,
   circle {
     fill: rgb(249, 137, 0);
-
-    transition: all 0.2s ease-in;
   }
 }
 // svg:hover path,
@@ -28,21 +29,21 @@
 //   transition: all 0.2s ease-in;
 // }
 
-.socials__item:hover + svg {
-  fill: orange;
-}
+// .socials__item:hover + svg {
+//   fill: orange;
+// }
 
-.socials__item--telegram {
-  // -webkit-filter: hue-rotate(250deg) saturate(10);
-  // filter: hue-rotate(250deg) saturate(10);
-  background-image: url("/telegram.svg");
-  // background-color: orange;
-  // -webkit-mask-image: url("/telegram.svg") no-repeat 50% 50%;
-  // mask-image: url("/telegram.svg") no-repeat 50% 50%;
-}
-.socials__item--viber {
-  background-image: url("/viber.svg");
-}
-.socials__item--whatsapp {
-  background-image: url("/whatsapp.svg");
-}
+// .socials__item--telegram {
+//   // -webkit-filter: hue-rotate(250deg) saturate(10);
+//   // filter: hue-rotate(250deg) saturate(10);
+//   background-image: url("/telegram.svg");
+//   // background-color: orange;
+//   // -webkit-mask-image: url("/telegram.svg") no-repeat 50% 50%;
+//   // mask-image: url("/telegram.svg") no-repeat 50% 50%;
+// }
+// .socials__item--viber {
+//   background-image: url("/viber.svg");
+// }
+// .socials__item--whatsapp {
+//   background-image: url("/whatsapp.svg");
+// }

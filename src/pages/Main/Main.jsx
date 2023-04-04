@@ -21,6 +21,18 @@ const Main = () => {
       {/* </div> */}
       {/* <div className="container"> */}
       <Footer />
+      <div className="ball ball--1">
+        <img src="balls/red-ball.png" alt="" />
+      </div>
+      <div className="ball ball--2">
+        <img src="balls/purple-ball.png" alt="" />
+      </div>
+      <div className="ball ball--3">
+        <img src="balls/ball3.png" alt="" />
+      </div>
+      {/* <div className="ball ball--4">
+        <img src="balls/red-light.png" alt="" />
+      </div> */}
       {/* </div> */}
     </>
     // </div>
