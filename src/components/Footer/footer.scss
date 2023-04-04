@@ -72,6 +72,9 @@
   .footer {
     margin: 45px auto 0 auto !important;
   }
+  .footer__main {
+    flex-direction: column;
+  }
   .footer * {
     text-align: left !important;
     justify-content: flex-start !important;
