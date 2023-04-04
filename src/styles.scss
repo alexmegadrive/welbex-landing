@@ -1,21 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .body {
-  position: relative;
-  min-height: 100vh;
-  max-width: 1140px;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 1140px;
   height: 100%;
-  padding: 46px 0 20px 0;
-  background-color: black;
-  color: white;
+  min-height: 100vh;
   margin: 0 auto;
+  padding: 46px 0 20px 0;
   background-color: #0e1014;
   background-image: url("/bg-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
   & * {
     box-sizing: border-box;
   }
@@ -27,47 +26,47 @@
 }
 
 .offers {
-  align-items: flex-start;
-  padding-top: 90px;
-  padding-bottom: 69px;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 69px;
 }
 
 .btn {
-  border: none;
-  color: white;
   width: 262px;
   height: 61px;
+  border: none;
+  color: white;
+  color: #e4e5ea;
   font-family: "Inter";
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #e4e5ea;
   &--blue {
     background: #4077f3;
     &:hover {
-      transition: all 0.2s ease-in;
-      color: #4077f3;
       background: rgb(255, 255, 255);
+      color: #4077f3;
       cursor: pointer;
+      transition: color 0.2s ease-in, color 0.2s ease-in;
     }
   }
 }
 
 .ball {
+  z-index: -1;
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
-  z-index: -1;
 
   &--1 {
     top: 7vh;
     right: 48vw;
-    animation: ball1 10s infinite;
+    animation: ball1 12s infinite;
   }
   &--2 {
     top: 6vh;
@@ -77,27 +76,27 @@
   &--3 {
     top: 66vh;
     right: 35vw;
-    animation: ball3 8s infinite;
+    animation: ball3 15s infinite;
   }
   &--4 {
     top: 33vh;
     left: 0vw;
-    animation: ball4 12s infinite;
+    animation: ball4 15s infinite;
   }
 }
 
 @keyframes ball1 {
   0% {
-    top: 7vh;
+    top: 8vh;
     right: 48vw;
   }
 
   50% {
-    top: 7vh;
+    top: 8vh;
     right: 67vw;
   }
   100% {
-    top: 7vh;
+    top: 8vh;
     right: 48vw;
   }
 }
@@ -119,16 +118,18 @@
 @keyframes ball3 {
   0% {
     top: 66vh;
-    right: 35vw;
+    right: 55vw;
   }
 
   50% {
     top: 66vh;
     right: 55vw;
+    top: 66vh;
+    right: 35vw;
   }
   100% {
     top: 66vh;
-    right: 35vw;
+    right: 55vw;
   }
 }
 @keyframes ball4 {
@@ -149,22 +150,22 @@
 
 @media only screen and (min-width: 0px) and (max-width: 1200px) {
   body {
+    height: auto !important;
+    padding: 0px 0px 60px 0px !important;
     background: black;
     background-image: none !important;
-    padding: 0px 0px 60px 0px !important;
-    height: auto !important;
   }
   .container {
     width: 320px !important;
-    padding-left: 15px !important;
     padding-right: 15px !important;
+    padding-left: 15px !important;
     // padding-left: 15px;
     // padding-right: 15px;
   }
   .offers {
-    padding-top: 40px;
-    margin-top: 0;
     flex-direction: column;
+    margin-top: 0;
+    padding-top: 40px;
   }
 
   .offers__wrapper {
