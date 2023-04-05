@@ -15,7 +15,7 @@ function App() {
         element: <Page404 />,
       },
     ],
-    { basename: "/" }
+    { basename: "/welbex-landing" }
   );
 
   return <RouterProvider router={router} />;
