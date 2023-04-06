@@ -8,7 +8,7 @@ const TitleOffer = () => {
         Зарабатывайте больше<div className="feature__gradient--1">c WELBEX</div>
       </h1>
       <h2 className="feature__description">
-        Развиваем и контролируем продажи за вас
+        Развиваем и контролируем <br /> продажи за вас
       </h2>
     </section>
   );
