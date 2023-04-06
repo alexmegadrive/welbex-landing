@@ -18,16 +18,28 @@ const Benefits = () => {
       </div>
 
       <div className="benefits__grid">
-        <BenefitItem header="Виджеты" description="30 готовых решений" />
+        <BenefitItem
+          header="Виджеты"
+          mobileHeader="30 виджетов"
+          description="30 готовых решений"
+          classes="benefitItem--mobileOrder-1"
+        />
         <BenefitItem
           header="Dashboard"
+          classes="benefitItem--mobileOrder-2"
           description="с показателями вашего бизнеса"
         />
         <BenefitItem
           header="Skype Аудит"
           description="отдела продаж и CRM системы"
+          classes="benefitItem--mobileOrder-0"
         />
-        <BenefitItem header="35 дней" description="использования CRM" />
+        <BenefitItem
+          header="35 дней"
+          mobileHeader="месяц amocrm"
+          description="использования CRM"
+          classes="benefitItem--mobileOrder-3"
+        />
       </div>
 
       <OfferBtn text="Получить консультацию" />

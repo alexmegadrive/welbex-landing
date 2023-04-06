@@ -7,19 +7,21 @@
   }
 }
 .nav {
-  margin-top: 15px;
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
+  margin-left: 55px;
   list-style-type: none;
   gap: 30px;
 }
 
 .header__contacts {
-  margin-top: 15px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 48.67px;
+  margin-top: 15px;
+  margin-left: auto;
+  gap: 52px;
 }
 
 .header__link {
@@ -31,10 +33,13 @@
     height: 55px;
   }
   .nav {
-    margin-top: 0;
-    height: 100%;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    text-transform: uppercase;
+    gap: 17px;
   }
   .logo-container,
   .header__contacts {

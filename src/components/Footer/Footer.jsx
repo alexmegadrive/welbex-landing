@@ -40,11 +40,21 @@ const Footer = () => {
                 </li>
               </ul>
               <ul className="footer-item__list">
-                <li>
+                <li className="desktop">
                   <NavLink link="./" text="Кейсы" />
                 </li>
-                <li>
-                  <NavLink link="./" text="Благодарственные письма" />
+                <li className="desktop">
+                  <NavLink
+                    link="./"
+                    text="Благодарственные письма"
+                    classes="desktop"
+                  />
+                </li>
+                <li className="mobile">
+                  <NavLink link="./" text="Благодарность клиентов" />
+                </li>
+                <li className="mobile">
+                  <NavLink link="./" text="Кейсы" />
                 </li>
                 <li>
                   <NavLink link="./" text="Сертификаты" />
@@ -62,9 +72,13 @@ const Footer = () => {
         <div className="footer-item">
           <div className="footer-item__title">Контакты</div>
 
-          <ul className="footer-item__list">
+          <ul className="footer-item__list footer-item__list--contacts">
             <li>
-              <NavLink link="tel:+75555555555" text=" +7 555 555-55-55" />
+              <NavLink
+                link="tel:+75555555555"
+                text=" +7 555 555-55-55"
+                classes="tel"
+              />
             </li>
             <li>
               <Socials />

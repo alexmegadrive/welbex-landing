@@ -1,7 +1,7 @@
 .socials {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 15px;
   &--header {
     gap: 32px;
   }
@@ -18,5 +18,15 @@
   polygon,
   circle {
     fill: rgb(249, 137, 0);
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  .socials {
+    gap: 21px;
+  }
+  .socials__item svg {
+    width: 19px;
+    height: 19px;
   }
 }

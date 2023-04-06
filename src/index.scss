@@ -15,8 +15,8 @@
   background-size: cover;
   color: white;
   & * {
-    z-index: 1;
     box-sizing: border-box;
+    z-index: 1;
   }
 }
 
@@ -30,7 +30,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 90px;
+  padding-top: 92px;
   padding-bottom: 69px;
 }
 
@@ -56,12 +56,15 @@
     }
   }
 }
+.mobile {
+  display: none;
+}
 
 .ball {
+  z-index: 0 !important;
   position: absolute;
   border-radius: 100%;
   opacity: 0.7;
-  z-index: 0 !important;
 
   &--1 {
     top: 8vh;
@@ -82,6 +85,47 @@
     top: 33vh;
     left: 0vw;
     animation: ball4 15s infinite;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  .body {
+    height: auto !important;
+    padding: 0px 0px 60px 0px !important;
+    background: black;
+    background-image: none !important;
+  }
+  .container {
+    width: 320px !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .offers {
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .offers__wrapper {
+    width: 100%;
+    background-image: url("./assets/bg-mobile.png");
+    background-position: left bottom;
+    background-size: cover;
+  }
+  .ball {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .tel {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
   }
 }
 
@@ -123,8 +167,8 @@
 
   50% {
     top: 66vh;
-    right: 55vw;
     top: 66vh;
+    right: 55vw;
     right: 35vw;
   }
   100% {
@@ -145,37 +189,5 @@
   100% {
     top: 33vh;
     left: 0vw;
-  }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 1200px) {
-  .body {
-    height: auto !important;
-    padding: 0px 0px 60px 0px !important;
-    background: black;
-    background-image: none !important;
-  }
-  .container {
-    width: 320px !important;
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-  .offers {
-    flex-direction: column;
-    margin-top: 0;
-    padding-top: 40px;
-  }
-
-  .offers__wrapper {
-    width: 100%;
-    background-image: url("./assets/bg-mobile.png");
-    background-position: left bottom;
-    background-size: cover;
-  }
-  .ball {
-    display: none;
-  }
-  .desktop {
-    display: none;
   }
 }
